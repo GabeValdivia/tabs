@@ -13,6 +13,7 @@ function handleTabClick(e) {
     tab.setAttribute('aria-selected', false);
   });
   // Mark the clicked tab as selected
+  e.currentTarget.setAttribute('aria-selected', true);
   // Find the associated tabPanel and show it!
 }
 
