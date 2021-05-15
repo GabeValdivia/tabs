@@ -24,7 +24,6 @@ function handleTabClick(e) {
   */
 
   // METHOD 2 -  Find in the array of tab panels
-  console.log(tabPanels);
   const tabPanel = tabPanels.find(
     (panel) => panel.getAttribute('aria-labelledby') === id
   );
