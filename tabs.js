@@ -5,6 +5,9 @@ const tabPanels = tabs.querySelectorAll('[role="tabpanel"]');
 
 function handleTabClick(e) {
   // Hide all tab panels
+  tabPanels.forEach((panel) => {
+    panel.hidden = true;
+  });
   // Mark all tabs as unselected
   // Mark the clicked tab as selected
   // Find the associated tabPanel and show it!
